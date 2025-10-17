@@ -6,6 +6,36 @@
 
 <body>
     <h1>Hello</h1>
+    <div id="person-container"></div>
+    <script>
+        const people = [
+            "aadi",
+            "asil",
+            "alexandra",
+            "allessandro",
+            "connor",
+            "chris",
+            "david",
+            "davit",
+            "emily",
+            "fatima",
+            "francesca",
+            "fred",
+            "gamithra",
+            "huda",
+            "jamie",
+            "martina",
+            "nick",
+            "tuna",
+        ]
+
+        people.forEach(person => {
+            const nameTitle = document.createElement("p");
+            nameTitle.innerHTML = person;
+            const personContainer = document.getElementById("person-container");
+            personContainer.append(nameTitle);
+        })
+    </script>
 </body>
 
 </html>
