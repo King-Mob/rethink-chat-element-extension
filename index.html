@@ -1,41 +1,15 @@
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <title>Rethinking Chat Module Extension</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rethinking Chat Extension</title>
 </head>
 
 <body>
-    <h1>Hello</h1>
-    <div id="person-container"></div>
-    <script>
-        const people = [
-            "aadi",
-            "asil",
-            "alexandra",
-            "alessandro",
-            "connor",
-            "chris",
-            "david",
-            "davit",
-            "emily",
-            "fatima",
-            "francesca",
-            "fred",
-            "gamithra",
-            "huda",
-            "jamie",
-            "martina",
-            "nick",
-            "tuna",
-        ]
-
-        people.forEach(person => {
-            const nameTitle = document.createElement("p");
-            nameTitle.innerHTML = person;
-            const personContainer = document.getElementById("person-container");
-            personContainer.append(nameTitle);
-        })
-    </script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
 </body>
 
 </html>
